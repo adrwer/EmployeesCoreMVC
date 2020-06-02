@@ -15,8 +15,10 @@ namespace EmployeesCoreMVC.Models
         [Required]
         public string Name { get; set; }
         [Column(TypeName = "varchar(10)")]
+        [Display(Name = "Employee Code")]
         public string EmpCode { get; set; }
         [Column(TypeName = "varchar(100)")]
+        [Display(Name = "Job Title")]
         public string JobTitle { get; set; }
         [Column(TypeName = "varchar(100)")]
         public string Department { get; set; }
